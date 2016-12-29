@@ -9,21 +9,21 @@ if ( ! defined( 'ABSPATH' ) ) {
  */
 class WP_API_Vuejs_PoC_Page {
 
-	/**
-	 * Access
-	 */
-	private static $user_can = 'edit_posts';
+    /**
+     * Access
+     */
+    private static $user_can = 'edit_posts';
     private static $page_slug = 'api-test';
 
-	/**
-	 * Constructor.
-	 */
-	public function __construct() {
+    /**
+     * Constructor.
+     */
+    public function __construct() {
         add_action( 'wp_enqueue_scripts', array( $this, 'page_scripts' ) );
-		add_filter( 'the_content', array( $this, 'page_content' ) );
-	}
+        add_filter( 'the_content', array( $this, 'page_content' ) );
+    }
 
-	public function page_scripts() {
+    public function page_scripts() {
         if ( is_page( self::$page_slug ) ) {
             // load the Vue.js app
             wp_enqueue_script( 'wp-api-vuejs-poc', WAVP_PLUGIN_URL . 'js/build.js', array(), false, true );
@@ -40,7 +40,7 @@ class WP_API_Vuejs_PoC_Page {
         }
     }
 
-	public function page_content($content) {
+    public function page_content($content) {
         if ( is_page( self::$page_slug ) ) {
             // output only to logged in users who can edit posts
             if ( is_user_logged_in() && current_user_can( self::$user_can ) ) {
