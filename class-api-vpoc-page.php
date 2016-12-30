@@ -26,7 +26,7 @@ class WP_API_Vuejs_PoC_Page {
     public function page_scripts() {
         if ( is_page( self::$page_slug ) ) {
             // load the Vue.js app
-            wp_enqueue_script( 'wp-api-vuejs-poc', WAVP_PLUGIN_URL . 'js/build.js', array(), false, true );
+            wp_enqueue_script( 'wp-api-vuejs-poc', WAVP_PLUGIN_URL . 'dist/build.js', array(), false, true );
 
             // localize data for script
             wp_localize_script( 'wp-api-vuejs-poc', 'wp_api_vuejs_poc', array(
