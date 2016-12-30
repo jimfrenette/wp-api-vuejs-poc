@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div>
     <h2>Add New Post</h2>
     <form v-on:submit.prevent="onSubmit">
       <div>
@@ -12,7 +12,7 @@
       </div>
       <input type="submit" value="Submit">
     </form>
-  </div>
+  <div>
 </template>
 
 <script>
