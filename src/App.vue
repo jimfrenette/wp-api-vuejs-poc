@@ -21,7 +21,7 @@ import Vue from './main.js'
 export default {
   data() {
       return {
-          post_titlt: null,
+          post_title: null,
           post_content: null
       }
   },
