@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2>Add New Post</h2>
+    <h2>Submit New Post</h2>
     <form v-on:submit.prevent="onSubmit">
       <div>
         <label>Title</label>
