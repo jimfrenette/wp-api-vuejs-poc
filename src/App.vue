@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2>Submit New Post</h2>
+    <h3>Submit New Post</h3>
     <form v-on:submit.prevent="onSubmit">
       <div>
         <label>Title</label>
@@ -8,7 +8,7 @@
       </div>
       <div>
         <label>Content</label>
-        <textarea rows="10" cols="20" v-model="post_content"></textarea>
+        <textarea rows="8" cols="20" v-model="post_content"></textarea>
       </div>
       <input type="submit" value="Submit">
     </form>
