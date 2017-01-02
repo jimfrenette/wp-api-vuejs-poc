@@ -1,4 +1,3 @@
-
 var Vue = require('vue');
 
 import axios from 'axios'
