@@ -27,7 +27,7 @@ export default {
   },
   methods: {
     onSubmit: function () {
-      Vue.http.post(
+      Vue.axios.post(
           wp_api_vuejs_poc.rest_url + 'wp/v2/posts',
           {
             title: this.post_title,

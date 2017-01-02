@@ -1,12 +1,14 @@
+
 var Vue = require('vue');
-var VueResource = require('vue-resource');
+
+import axios from 'axios'
+import VueAxios from 'vue-axios'
 
 import App from './App.vue'
 
-Vue.use(VueResource);
+Vue.use(VueAxios, axios)
 
-Vue.http.headers.common['X-WP-Nonce'] = wp_api_vuejs_poc.nonce;
-Vue.http.options.root = wp_api_vuejs_poc.rest_url;
+Vue.axios.defaults.headers.common['X-WP-Nonce'] = wp_api_vuejs_poc.nonce;
 
 export default Vue;
 
