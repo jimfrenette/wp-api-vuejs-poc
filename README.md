@@ -3,6 +3,8 @@ Proof of concept WordPress plugin to submit posts from the front end using the W
 
 [http://jimfrenette.com/2017/01/post-from-front-end-wp-api-vuejs/](http://jimfrenette.com/2017/01/post-from-front-end-wp-api-vuejs/)
 
+<br />
+<br />
 
 ## API Request Handlers
 
@@ -18,8 +20,10 @@ The [f-axios branch](https://github.com/jimfrenette/wp-api-vuejs-poc/tree/f-axio
 
 ### jquery
 
-The [f-jquery branch](https://github.com/jimfrenette/wp-api-vuejs-poc/tree/f-jquery) was created from master and updated to replace vue-resource with the ajax method available in the external jQuery library loaded by default in WordPress.
+The [f-jquery branch](https://github.com/jimfrenette/wp-api-vuejs-poc/tree/f-jquery) was cut from master and updated to replace vue-resource with the ajax method available in the external jQuery library loaded by default in WordPress.
 
+<br />
+<br />
 
 ## webpack
 
