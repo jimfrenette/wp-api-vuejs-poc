@@ -16,6 +16,8 @@
 </template>
 
 <script>
+var $ = require('jquery');
+
 import Vue from './main.js'
 
 export default {
@@ -27,19 +29,26 @@ export default {
   },
   methods: {
     onSubmit: function () {
-      Vue.http.post(
-          wp_api_vuejs_poc.rest_url + 'wp/v2/posts',
-          {
+
+      $.ajax({
+          method: "POST",
+          url: wp_api_vuejs_poc.rest_url + 'wp/v2/posts',
+          data: {
             title: this.post_title,
             content: this.post_content
+          },
+          beforeSend: function ( xhr ) {
+              xhr.setRequestHeader( 'X-WP-Nonce', wp_api_vuejs_poc.nonce );
+          },
+          success : function( response ) {
+              console.log( response );
+              alert( wp_api_vuejs_poc.success );
+          },
+          fail : function( response ) {
+              console.log( response );
+              alert( wp_api_vuejs_poc.failure );
           }
-      ).then(response => {
-        console.log( response );
-        alert( wp_api_vuejs_poc.success );
-      }, response => {
-        console.log( response );
-        alert( wp_api_vuejs_poc.failure );
-      })
+      });
     }
   },
 }

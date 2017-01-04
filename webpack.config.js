@@ -50,7 +50,12 @@ module.exports = {
   performance: {
     hints: false
   },
-  devtool: '#eval-source-map'
+  devtool: '#eval-source-map',
+  externals: {
+    // require("jquery") is external and available
+    // on the global var jQuery
+    "jquery": "jQuery"
+  }
 }
 
 if (process.env.NODE_ENV === 'production') {
