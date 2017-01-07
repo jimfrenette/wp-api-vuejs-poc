@@ -16,7 +16,7 @@
 </template>
 
 <script>
-import $ = from 'jquery'
+import $ from 'jquery'
 import Vue from './main.js'
 
 export default {
