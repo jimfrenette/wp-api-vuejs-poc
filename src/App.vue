@@ -16,8 +16,7 @@
 </template>
 
 <script>
-var $ = require('jquery');
-
+import $ = from 'jquery'
 import Vue from './main.js'
 
 export default {
