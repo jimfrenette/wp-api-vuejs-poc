@@ -33,7 +33,7 @@ The [f-jquery branch](https://github.com/jimfrenette/wp-api-vuejs-poc/tree/f-jqu
 # install dependencies
 npm install
 
-# serve with hot reload at localhost:8080
+# build for development, watch and recompile
 npm run dev
 
 # build for production with minification
