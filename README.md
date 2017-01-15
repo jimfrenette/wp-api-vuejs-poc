@@ -12,15 +12,15 @@ Three different web request handler examples are included:
 
 ### vue-resource
 
-The [master branch](https://github.com/jimfrenette/wp-api-vuejs-poc) was created initially using the vue-resource plugin for Vue.js to provide services for making web requests and handle responses using a XMLHttpRequest.
+The [vue-resource-p01 tag](https://github.com/jimfrenette/wp-api-vuejs-poc/tree/vue-resource-p01) was the initial version, created in master using the vue-resource plugin for Vue.js to provide services for making web requests and handle responses using a XMLHttpRequest.
 
 ### axios
 
-The [f-axios branch](https://github.com/jimfrenette/wp-api-vuejs-poc/tree/f-axios) was cut from master and updated with axios and vue-axios to replace vue-resource.
+The [axios-p01 tag](https://github.com/jimfrenette/wp-api-vuejs-poc/tree/axios-p01) was cut from master and updated with axios and vue-axios to replace vue-resource.
 
 ### jquery
 
-The [f-jquery branch](https://github.com/jimfrenette/wp-api-vuejs-poc/tree/f-jquery) was cut from master and updated to replace vue-resource with the ajax method available in the external jQuery library loaded by default in WordPress.
+The [jquery-p01 tag](https://github.com/jimfrenette/wp-api-vuejs-poc/tree/jquery-p01) was cut from master and updated to replace vue-resource with the ajax method available in the external jQuery library loaded by default in WordPress.
 
 <br />
 <br />

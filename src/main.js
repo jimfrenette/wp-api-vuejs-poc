@@ -1,11 +1,9 @@
 import Vue from 'vue'
+<<<<<<< HEAD
 import VueResource from 'vue-resource'
+=======
+>>>>>>> f-jquery
 import App from './App.vue'
-
-Vue.use(VueResource);
-
-Vue.http.headers.common['X-WP-Nonce'] = wp_api_vuejs_poc.nonce;
-Vue.http.options.root = wp_api_vuejs_poc.rest_url;
 
 export default Vue;
 
