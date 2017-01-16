@@ -29,6 +29,7 @@
       <ul>
           <li v-for="post in posts">
             <a href="#" @click='editPost(post)'>{{ post.title.rendered }}</a>
+            <a href="#" @click='delPost(post)'>[&ndash;]</a>
           </li>
       </ul>
     </div>
@@ -58,6 +59,21 @@ export default {
       this.post_id = post.id
       this.post_title = post.title.rendered
       this.post_content = post.content.rendered
+    },
+    delPost( post ) {
+      $.ajax({
+        method: "DELETE",
+        url: wp_api_vuejs_poc.rest_url + 'wp/v2/posts/' + post.id,
+        beforeSend: function ( xhr ) {
+          xhr.setRequestHeader( 'X-WP-Nonce', wp_api_vuejs_poc.nonce );
+        }
+      })
+      .done( $.proxy( function() {
+        this.getPosts ();
+      }, this ))
+      .fail( $.proxy( function( response ) {
+        console.log( response );
+      }, this ));
     },
     getPosts () {
       this.error = this.posts = null
