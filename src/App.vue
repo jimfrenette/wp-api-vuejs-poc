@@ -29,7 +29,7 @@
       <ul>
           <li v-for="post in posts">
             <a href="#" @click='editPost(post)'>{{ post.title.rendered }}</a>
-            <a href="#" @click='delPost(post)'>[&ndash;]</a>
+            <a href="#" @click='delPost(post)' title="DELETE">[&ndash;]</a>
           </li>
       </ul>
     </div>
@@ -69,7 +69,7 @@ export default {
         }
       })
       .done( $.proxy( function() {
-        this.getPosts ();
+        this.getPosts();
       }, this ))
       .fail( $.proxy( function( response ) {
         console.log( response );
@@ -89,6 +89,7 @@ export default {
       .done( $.proxy( function( response ) {
           this.loading = false;
           this.posts = response;
+          this.newPost();
       }, this ))
       .fail( $.proxy( function( response ) {
           this.error = response;
