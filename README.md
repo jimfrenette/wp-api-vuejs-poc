@@ -1,7 +1,7 @@
 # wp-api-vuejs-poc
 Proof of concept WordPress plugin to submit posts from the front end using the WordPress REST API and Vue.js
 
-[http://jimfrenette.com/2017/01/post-from-front-end-wp-api-vuejs/](http://jimfrenette.com/2017/01/post-from-front-end-wp-api-vuejs/)
+[http://jimfrenette.com/2017/01/post-from-front-end-wp-api-vuejs-part2/](http://jimfrenette.com/2017/01/post-from-front-end-wp-api-vuejs-part2/)
 
 <br />
 <br />
@@ -19,6 +19,14 @@ The [vue-resource-p01 tag](https://github.com/jimfrenette/wp-api-vuejs-poc/tree/
 The [axios-p01 tag](https://github.com/jimfrenette/wp-api-vuejs-poc/tree/axios-p01) was cut from master and updated with axios and vue-axios to replace vue-resource.
 
 ### jquery
+
+The [jquery-p02 tag](https://github.com/jimfrenette/wp-api-vuejs-poc/tree/jquery-p02) contains the following additions:
+
+* List posts submitted by the current user
+* Select from the list to edit a post
+* Delete a post from the list
+
+<br />
 
 The [jquery-p01 tag](https://github.com/jimfrenette/wp-api-vuejs-poc/tree/jquery-p01) was cut from master and updated to replace vue-resource with the ajax method available in the external jQuery library loaded by default in WordPress.
 
