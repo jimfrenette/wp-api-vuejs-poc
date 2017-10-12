@@ -12,7 +12,25 @@
       </div>
       <input type="submit" value="Submit">
     </form>
-  <div>
+
+    <div v-if="loading">
+      Loading...
+    </div>
+
+    <div v-if="error">
+      {{ error }}
+    </div>
+
+    <div v-if="posts">
+      <ul>
+          <li v-for="post in posts">
+            <a href="#" @click='editPost(post)'>{{ post.title.rendered }}</a>
+            <a href="#" @click='delPost(post)' title="DELETE">[&ndash;]</a>
+          </li>
+      </ul>
+    </div>
+
+  </div>
 </template>
 
 <script>
