@@ -3,7 +3,6 @@ Proof of concept WordPress plugin to submit posts from the front end using the W
 
 [http://jimfrenette.com/2017/01/post-from-front-end-wp-api-vuejs/](http://jimfrenette.com/2017/01/post-from-front-end-wp-api-vuejs/)
 
-<br />
 https://www.youtube.com/watch?v=aRHX-Xpy67E&t 
 
 <br />
