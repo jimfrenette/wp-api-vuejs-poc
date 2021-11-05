@@ -116,7 +116,7 @@ final class WP_API_Vuejs_PoC {
 
     public function includes() {
         if ( $this->is_request( 'frontend' ) ) {
-            include( 'class-api-vpoc-page.php' );
+            include( WAVP_PLUGIN_PATH . 'class-api-vpoc-page.php' );
         }
     }
 
