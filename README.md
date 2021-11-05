@@ -40,9 +40,6 @@ The [vue-resource-p01 tag](https://github.com/jimfrenette/wp-api-vuejs-poc/tree/
 # install dependencies
 npm install
 
-# build for development, watch and recompile
-npm run dev
-
 # build for production with minification
 npm run build
 ```
